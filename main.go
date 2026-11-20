@@ -1,11 +1,11 @@
-// HTTP API: a generic PTZ controller add-on. Each slide action is one
+// HTTP API: a generic jadeck add-on. Each slide action is one
 // web request you set up (ProPresenter and others).
 package main
 
 import (
 	"encoding/json"
 
-	"github.com/toolingdev/ptz-controller/sdk/addon"
+	"github.com/toolingdev/jadeck/sdk/addon"
 )
 
 // Version is set by the release build.
@@ -16,7 +16,7 @@ func main() { addon.Serve(spec()) }
 func spec() addon.Spec {
 	return addon.Spec{
 		Manifest: addon.Manifest{
-			ID: "http-api", Name: "HTTP API", Version: Version, Publisher: "PTZ Controller", APIVersion: addon.APIVersion, Repo: "toolingdev/ptz-addon-http-api", Generic: true,
+			ID: "http-api", Name: "HTTP API", Version: Version, Publisher: "jadeck", APIVersion: addon.APIVersion, Repo: "toolingdev/jadeck-addon-http-api", Generic: true,
 			Description: "Each slide action is one web request you set up (ProPresenter and others).",
 			Reaches:     "The web addresses you enter for each action",
 			ConnectionTypes: []addon.ConnectionType{{
