@@ -1,5 +1,9 @@
 # HTTP API — PTZ controller add-on
 
+Each slide action is one web request you set up (ProPresenter and others).
+
+Install: it ships with the controller (Settings → Add-ons); newer releases of this repository arrive as updates there.
+
 Build every platform and the `.ptzaddon` package:
 
 ```bash
